@@ -1,0 +1,11 @@
+@Library('scene-board-jenkins@main')
+import br.com.sceneboard.Commands
+import br.com.sceneboard.ProjectMetadata
+
+def projectMetadata = new ProjectMetadata();
+def cmd = new Commands();
+
+projectMetadata.language = "Java"
+projectMetadata.version = "1.0"
+
+cmd.exec(projectMetadata);
