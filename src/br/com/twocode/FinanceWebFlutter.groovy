@@ -1,4 +1,4 @@
-package br.com.isi
+package br.com.twocode
 
 def exec(ProjectMetadata projectMetadata) {
     projectMetadata.imageFullName = "${ECR_DEFAULT_REGISTRY}/${projectMetadata.projectName}:${BRANCH_NAME}-${BUILD_NUMBER}"

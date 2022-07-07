@@ -1,4 +1,4 @@
-package br.com.sceneboard
+package br.com.twocode
 
 def exec(ProjectMetadata projectMetadata) {
     timeout(60) {

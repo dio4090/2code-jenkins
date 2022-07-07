@@ -1,6 +1,6 @@
-@Library('scene-board-jenkins@main')
-import br.com.sceneboard.Commands
-import br.com.sceneboard.ProjectMetadata
+@Library('2code-jenkins@main')
+import br.com.twocode.Commands
+import br.com.twocode.ProjectMetadata
 
 def projectMetadata = new ProjectMetadata();
 def cmd = new Commands();
