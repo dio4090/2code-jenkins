@@ -3,7 +3,7 @@ package br.com.twocode
 def exec(ProjectMetadata projectMetadata) {
     //TODO: Quando tiver AWS trocar para a primeira linha
     //projectMetadata.imageFullName = "${ECR_DEFAULT_REGISTRY}/${projectMetadata.projectName}:${BRANCH_NAME}-${BUILD_NUMBER}"
-    projectMetadata.imageFullName = "${projectMetadata.projectName}:${BRANCH_NAME}-${BUILD_NUMBER}"
+    projectMetadata.imageFullName = "${projectMetadata.projectName}:${main}-${BUILD_NUMBER}"
 
     try {
         node ('docker_node') {
