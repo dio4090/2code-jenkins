@@ -2,7 +2,7 @@ package br.com.twocode
 
 def exec(ProjectMetadata projectMetadata) {
     timeout(60) {
-        node ('master') {
+        node ('docker_node') {
             try {
                 if (projectMetadata.projectName == 'finance-flutter-web') {
                     def webFlutter = new FinanceWebFlutter()
